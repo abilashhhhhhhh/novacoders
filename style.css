@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+header h1 {
+    font-size: 2.6rem;
+    color: #00f2ff;
+}
+
+header p {
+    opacity: 0.85;
+    font-size: 1.1rem;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%;
+    flex-wrap: wrap;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.text p {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Cipher Wheel */
+.cipher-wheel {
+    position: relative;
+    width: 240px;
+    height: 240px;
+}
+
+.wheel {
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #00f2ff;
+    animation: spin 18s linear infinite;
+}
+
+.outer {
+    width: 240px;
+    height: 240px;
+}
+
+.inner {
+    width: 160px;
+    height: 160px;
+    top: 40px;
+    left: 40px;
+    animation-direction: reverse;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #00f2ff;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Process Section */
+.process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    padding: 60px 10%;
+}
+
+.box {
+    background: rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,242,255,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0,242,255,0.45);
+}
+
+.box h3 {
+    margin-bottom: 15px;
+    color: #00f2ff;
+}
+body {
+    background-color: lightyellow;
+    text-align: center;
+}
+
+h1 {
+    color: green;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.75;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
